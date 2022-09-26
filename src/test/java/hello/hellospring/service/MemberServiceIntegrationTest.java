@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
-@Transactional
+//@Transactional
 public class MemberServiceIntegrationTest {
 
 
@@ -25,7 +25,7 @@ public class MemberServiceIntegrationTest {
     void 회원가입() throws Exception {
         // given
         Member member = new Member();
-        member.setName("hello");
+        member.setName("spring100");
 
         // when
         Long saveId = memberService.join(member);
